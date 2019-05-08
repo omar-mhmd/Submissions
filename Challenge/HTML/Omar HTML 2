@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+  <head>
+  <title>KpopMania</title>
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
+  </head>
+<body>
+    <img src="https://www269.lunapic.com/editor/p-trans.php?preview=1&fuzz=11&x=223&y=31&rand=6263&fill.jpg"
+      alt="kpopmania.jpg"
+        width="350px" </img>
+    <header>
+         <ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+      <h1>KpopMania</h1>
+      <br>
+      <h2>A Melody,A Memory and A Remedy</h2>
+      <br>
+      <h3>Come Along into the kpop world</h3>
+        <p><strong>"KpopMania is a heaven to all kpoppers.</strong>
+        <br>
+        <i>Come Along and enjoy all the music you need and from diff genres.</i>
+        <br>
+        <b><i>From upbeat music
+        to slow beat music, we got you covered !"
+        </header>
+    <img src="https://static.fnac-static.com/multimedia/Images/FR/NR/05/01/97/9896197/1540-1/tsp20180523094621/Love-Yourself-Tear.jpg"
+    alt="bts.jpg"
+    width="500px"
+    class="image"
+    </img>
+<h4 align="center">BTS songs</h4>
+<ol style="text-align:center; list-style-position:inside;">
+  <li>Blood Sweat & Tears</li>
+  <br>
+  <li>DNA</li>
+  <br>
+  <li>Boy In Luv</li>
+  <br>
+  <li>Jamais Vu</li>
+  <br>
+  <li>Make It Right</li>
+</ol>
+<br>
+    <footer>
+    <p>Contact information: <a href="Codi.tech">
+  Codi.Tech</a>.</p>
+      </footer>
+ 
+  </body>
+</html>

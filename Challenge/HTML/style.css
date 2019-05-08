@@ -1,0 +1,44 @@
+body{
+    background-color: #5DADE2;
+}
+
+h1{
+    font-family: Bookman;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #9549bb;
+  }
+
+  .image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+  }
+  .ol {
+    text-align: right-center;
+    list-style-position: inside;
+  }
