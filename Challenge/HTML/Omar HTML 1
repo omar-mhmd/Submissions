@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>HTML 1</title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body>
+    <img src="https://m.media-amazon.com/images/I/81zTUZMljoL._SS500_.jpg"
+      alt="kpopmania.jpg"
+        width="350px" </img>
+    <header>
+      <h1>KpopMania</h1>
+      <br>
+      <h2>A Melody,A Memory and A Remedy</h2>
+      <br>
+      <h3>Come Along into the kpop world</h3>
+        </header>
+        <p><strong>"KpopMania is a heaven to all kpoppers.</strong>
+        <br>
+        <i>Come Along and enjoy all the music you need and from diff genres.</i>
+        <br>
+        <b><i>From upbeat music
+        to slow beat music, we got you covered !"</b></i>
+  <footer>
+    this is my footer 
+      </footer>
+  </body>
+</html>
