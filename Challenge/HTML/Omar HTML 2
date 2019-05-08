@@ -4,12 +4,13 @@
   <title>KpopMania</title>
   <link rel = "stylesheet"
    type = "text/css"
-   href = "style.css" />
+   href = "style.css"/>
   </head>
 <body>
-    <img src="https://www269.lunapic.com/editor/p-trans.php?preview=1&fuzz=11&x=223&y=31&rand=6263&fill.jpg"
-      alt="kpopmania.jpg"
+    <img src="https://img.icons8.com/nolan/420/bts.png"
+      alt="kpopmania.png"
         width="350px" </img>
+
     <header>
          <ul>
   <li><a href="default.asp">Home</a></li>
