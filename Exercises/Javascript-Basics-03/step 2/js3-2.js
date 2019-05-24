@@ -1,4 +1,4 @@
-var x = document.querySelector("p");
+/* var x = document.querySelector("p");
 var y = document.querySelectorAll("a");
 
 console.log(y)
@@ -14,4 +14,19 @@ function myfunction(isHiden){
     else if (isHiden) {
         x.style.display = "none";
     }
-}
+}*/
+
+var p = document.querySelector("p");
+var s = document.getElementById("show");
+var h = document.getElementById("hide");
+
+s.addEventListener("click", main);
+h.addEventListener("click", main);
+
+function main () {
+    if (s.addEventListener) {
+        return(p.style.display = "block") }
+        
+        else{
+            return (p.style.display = "none") }
+        }
