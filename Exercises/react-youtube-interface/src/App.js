@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
 
 import './App.css';
-import Test from './Component/Test';
+import Logo from './Component/logo';
+import Searchbar from './Component/searchbar'
+import Icon from './Component/searchicon';
+import Player from './Component/links';
+import Description from './Component/description'
+import Side from './Component/side'
 
 class App extends Component {
     constructor(props) {
@@ -14,7 +19,12 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Test/>
+                <Logo/>
+                <Searchbar/>
+                <Icon/>
+                <Player/>
+                <Description/>
+                <Side/>
             </div>
         );
     }

@@ -1,0 +1,209 @@
+
+iframe{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+img{
+    width: 80px;
+    height:34px;
+    position: relative;
+    right: -80px;
+    top:10px;
+}
+
+input{
+    position: relative;
+    right: -300px;
+    top: -20px;
+    width:600px;
+}
+
+.Seicon{
+    background-image: url("../src/assets/search.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    position: relative;
+    right: -900px;
+    top: -50px;
+    width:40px;
+    height:30px;
+}
+
+.MainPlayer{
+    position: relative;
+    right: -100px;
+    top: -30px;
+}
+
+.Text1{
+    position: relative;
+    right: -100px;
+    top: -25px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2.4rem
+    
+}
+
+.Text2{
+    font-size: 16px;
+    color:#606060;
+    position: relative;
+    top: -30px;
+    right: -100px;
+}
+
+.line{
+    width: 700px;
+    position: relative;
+    top: -40px;
+    right: 230px;
+    color: gray;
+    
+}
+
+.profile{
+    display: block;
+    border-radius: 100px;
+    width: 70px;
+    height:70px;
+    position: relative;
+    top: -40px;
+    right: -90px;
+}
+
+.Sub{
+    position: relative;
+    top: -100px;
+    right: 10px;
+    background-image: none;
+    background-color: #cc0000;
+    height: 20px;
+    width:140px;
+    padding-top:10px;
+    padding-bottom:30px;
+    padding-right: 20px;
+    padding-left: auto;
+   border-radius: 2px;
+   text-align: center;
+    color: #FFFFFF;
+    margin: auto;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .007px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+}
+
+.But{
+    background-image: url(../src/assets/camera.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    right: -994px;
+    top:-943px;
+    height: 30px;
+    width: 20px;
+}
+
+
+.Graytext {
+    color: gray;
+    font-weight: 200;
+    top: -170px;
+}
+
+p{
+    position: relative;
+    top: -150px;
+    right: -200px;
+}
+
+
+.tinytext{
+    width:490px;
+    position: relative;
+    top: -165px;
+}
+
+.Linktext{
+    position: relative;
+    top:-190px;
+}
+a{
+    position: relative;
+    top:-230px;
+    right: -400px;
+}
+
+.Sidetext{
+    position: relative;
+    top: -890px;
+    right:-1030px;
+}
+
+.Sidevid {
+    position: relative;
+    bottom: 900px;
+    right: -1010px;
+}
+
+.Sideline{
+    position: relative;
+    right: 540px;
+    width: 400px;
+    color: gray;
+}
+
+.Lowervid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: auto;
+    float: right;
+    position: relative;
+    top:-900px;
+    left: -30px;
+
+}
+
+.Icon{
+    background-image: url('../src/assets/camera.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    position: relative;
+    right: -1000px;
+    top: -85px;
+    width:40px;
+    height:30px;
+
+}
+
+.Icon1{
+    background-image: url('../src/assets/camera.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    position: relative;
+    right: -1070px;
+    top: -119px;
+    width:40px;
+    height:30px;
+}
+
+.Icon2{
+    background-image: url('../src/assets/camera.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    position: relative;
+    right: -1140px;
+    top: -152px;
+    width:40px;
+    height:30px;
+}
