@@ -3,10 +3,11 @@ import '../App.css'
 
 class Player extends React.Component {
     render() {
+        console.log(this.props.video)
         return <div className="Player">
         
         <div className="MainPlayer">
-            <iframe width="900" height="415" src="https://www.youtube.com/embed/dpw9EHDh2bM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="900" height="415" src={`https://www.youtube.com/embed/${this.props.video.id.videoId}`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
         </div>
 
         <div>
