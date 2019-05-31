@@ -8,7 +8,7 @@ The following tasks were divided among the members:
     -HTML and CSS design : Mohammad Zaher AlNajjar
     -Graph: Omar Mohammad
     
-The plot was focused mainly on a dramatic and realistic set plot and in a psychological trauma. One person can not fight fate and death no matter what he tries. A story about a man who creates a time machine to fix the tragic accidental death of his beloved wife. Confused whether to pursue his pyshics research or moving on with life.
+The plot was focused mainly on a dramatic and realistic set plot and in a psychological trauma. One person can not fight fate and death no matter what he tries. A story about a man who creates a time machine tsqlitebrowser-ciphero fix the tragic accidental death of his beloved wife. Confused whether to pursue his pyshics research or moving on with life.
 
 If the person chooses to return back to time, the following events will happen:
     -time machine will break and person will be stuck before the man and woman have met

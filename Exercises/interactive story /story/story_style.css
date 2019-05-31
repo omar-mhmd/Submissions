@@ -45,6 +45,7 @@ button{
     width: 250px;
     height: 70px;
 position: relative;
+top:-250px;
 right: -480px;
 background-color: #6D214F;
 display: flex;
@@ -67,6 +68,6 @@ background-color: #000;
 }
 img{
 position: relative;
-bottom: -250px;
+top: -8px;
 
 }
