@@ -1,0 +1,72 @@
+*{
+    margin: 25px;
+}
+
+h1{
+    background-color: #6D214F;
+    font-style: italic;
+    font-weight: 600;
+    color:#f7f1e3;
+    text-align: center;
+    font: bold;
+    height: 100px;;
+    padding-top: 45px;
+    background-image: url("transparent-clock-spiral-3.png");  
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 35%; 
+    font-size: 60;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+    
+   
+
+
+P{
+font-size: 18px;
+text-align: center;
+text-align: justify;
+color: white;
+
+
+}
+
+
+
+button{
+    
+    
+    border-radius: 100%;
+    width: 250px;
+    height: 70px;
+position: relative;
+right: -480px;
+background-color: #6D214F;
+display: flex;
+flex-direction: column
+
+}
+h3{
+    position: relative;
+    right: 33px;
+
+    text-align: center;
+    width: 270px;
+    
+    
+}
+body{
+background-color: #000;
+
+
+}
+img{
+position: relative;
+bottom: -250px;
+
+}
