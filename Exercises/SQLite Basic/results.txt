@@ -8,7 +8,7 @@ WHERE Age>30
 
 4)SELECT Points FROM students WHERE Name='Alex'
 
-5)INSERT into students(Name,Age,Gender,Points) Values('Omar',20,'M',300)
+g5)INSERT into students(Name,Age,Gender,Points) Values('Omar',20,'M',300)
 
 6)UPDATE students SET points=350 WHERE ID=2
 
