@@ -1,7 +1,7 @@
 Basic Queries:
 1)SELECT Name FROM students
 
-2)SELECT Age FROM students
+2)SELECT * FROM students
 WHERE Age>30
 
 3)SELECT Name FROM students WHERE Age=30 and Gender='F'
