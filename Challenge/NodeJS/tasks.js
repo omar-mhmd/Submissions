@@ -38,7 +38,11 @@ function onDataReceived(text) {
     help();
   }
 
-  else if (text === 'quit\n' || 'exit\n'){
+  else if (text === 'quit\n'){
+    quit();
+  }
+
+  else if (text === 'exit\n'){
     quit();
   }
   else if(text === 'hello\n'){
