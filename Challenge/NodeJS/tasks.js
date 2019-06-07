@@ -34,12 +34,17 @@ function startApp(name){
  * @returns {void}
  */
 function onDataReceived(text) {
-  if (text === 'quit\n' || 'exit\n'){
+   if(text === 'help\n'){
+    help();
+  }
+
+  else if (text === 'quit\n' || 'exit\n'){
     quit();
   }
   else if(text === 'hello\n'){
     hello();
   }
+
   else{
     unknownCommand(text);
   }
@@ -77,6 +82,17 @@ function quit(){
   console.log('Quitting now, goodbye!')
   process.exit();
 }
+
+
+/**
+ * Lists all commands
+ *
+ * @returns {void}
+ */
+function help(){
+  console.log('unknownCommand\n' + 'hello\n' + 'quit\n')
+}
+
 
 // The following line starts the application
 startApp("Omar Mohammad")
