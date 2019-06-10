@@ -34,21 +34,19 @@ function startApp(name){
  * @returns {void}
  */
 function onDataReceived(text) {
-  console.log()
-  
-   if(text === 'help\n'){
+
+
+   if(text === 'help'){
     help();
   }
 
-  else if (text === 'quit\n'){
+  else if (text === 'quit' || text === 'exit'){
     quit();
   }
 
-  else if (text === 'exit\n'){
-    quit();
-  }
-  else if(text === 'hello\n'){
-    hello();
+  
+  else if(text.trim().slice(0,5) === 'hello'){
+    hello(text);
   }
 
   else{
@@ -74,8 +72,8 @@ function unknownCommand(c){
  *
  * @returns {void}
  */
-function hello(){
-  console.log('hello!'.replace("/n").trim (" "));
+function hello(batata){
+  console.log('hello'+batata.trim().substring(5,batata.length)+'!')
 }
 
 
@@ -96,9 +94,34 @@ function quit(){
  * @returns {void}
  */
 function help(){
-  console.log('unknownCommand\n' + 'hello\n' + 'quit\n'.replace("/n").trim(" "));
+  console.log('unknownCommand\n' + 'hello\n' + 'quit\n'.replace("\n").trim(" "));
 }
 
+/** 
+ * Adds tasks
+ * 
+ * @returns {void}
+*/
+function add(){
+  console.log();
+}
 
+/** 
+ *Removes tasks
+ * 
+ * @returns {void}
+*/
+function remove(){
+  console.log();
+}
+
+/** 
+ * lists tasks
+ * 
+ * @returns {void}
+*/
+function list(){
+  console.log();
+}
 // The following line starts the application
 startApp("Omar Mohammad")
