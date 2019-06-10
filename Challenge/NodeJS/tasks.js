@@ -37,7 +37,7 @@ var array = ["crispy", "fahita", "Zinger", "Chicken Burger", "Batata"]
 function onDataReceived(text) {
   var l = text.length;
 
-   if(text === 'help'){
+   if(text.trim().slice(0,4) === 'help'){
     help();
   }
 
@@ -55,6 +55,10 @@ function onDataReceived(text) {
 
   else if(text.trim().slice(0,3) === 'add'){
     add(text,l);
+  }
+
+  else if(text.trim().slice(0,6) === 'remove'){
+    remove(text);
   }
 
   else{
@@ -102,7 +106,7 @@ function quit(){
  * @returns {void}
  */
 function help(){
-  console.log('unknownCommand\n' + 'hello\n' + 'quit\n'.replace("\n").trim(" "));
+  console.log('unknownCommand\n' + 'hello\n' + 'quit\n');
 }
 
 /** 
@@ -124,8 +128,20 @@ function add(txt,lngth){
  * 
  * @returns {void}
 */
-function remove(){
-  console.log();
+function remove(text){
+  var n = text.charAt(7);
+  if( n=='remove\n'){
+    array.splice(array.length-1,1)
+  }
+  else if(n>array.length){
+    console.log('Please correct the error and add a number from the list')
+  }
+  else{
+  for (n;n<array.length+1;n++){
+    array.splice(n-1,1)
+    break;
+  }
+  }
 }
 
 /** 
