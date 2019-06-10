@@ -33,6 +33,7 @@ function startApp(name){
  * @param  {string} text data typed by the user
  * @returns {void}
  */
+var array = ["crispy", "fahita", "Zinger", "Chicken Burger", "Batata"]
 function onDataReceived(text) {
 
 
@@ -47,6 +48,13 @@ function onDataReceived(text) {
   
   else if(text.trim().slice(0,5) === 'hello'){
     hello(text);
+  }
+
+  else if(text === 'list\n'){
+  list();}
+
+  else if(text === 'add\n'){
+    add();
   }
 
   else{
@@ -103,6 +111,7 @@ function help(){
  * @returns {void}
 */
 function add(){
+  
   console.log();
 }
 
@@ -120,8 +129,9 @@ function remove(){
  * 
  * @returns {void}
 */
-function list(){
-  console.log();
+function list(text){
+  for(var i=0; i<array.length;i++){
+  console.log((i+1)+")"+array[i]);}
 }
 // The following line starts the application
 startApp("Omar Mohammad")
