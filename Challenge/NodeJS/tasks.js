@@ -35,7 +35,7 @@ function startApp(name){
  */
 var array = ["crispy", "fahita", "Zinger", "Chicken Burger", "Batata"]
 function onDataReceived(text) {
-
+  var l = text.length;
 
    if(text === 'help'){
     help();
@@ -53,8 +53,8 @@ function onDataReceived(text) {
   else if(text === 'list\n'){
   list();}
 
-  else if(text === 'add\n'){
-    add();
+  else if(text.trim().slice(0,3) === 'add'){
+    add(text,l);
   }
 
   else{
@@ -110,9 +110,13 @@ function help(){
  * 
  * @returns {void}
 */
-function add(){
-  
-  console.log();
+function add(txt,lngth){
+  if (lngth>5){
+    array.push(txt.trim().substring(4,lngth))
+  }
+  else {
+    console.log('error');
+}
 }
 
 /** 
