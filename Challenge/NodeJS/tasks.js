@@ -34,6 +34,8 @@ function startApp(name){
  * @returns {void}
  */
 function onDataReceived(text) {
+  console.log()
+  
    if(text === 'help\n'){
     help();
   }
@@ -73,7 +75,7 @@ function unknownCommand(c){
  * @returns {void}
  */
 function hello(){
-  console.log('hello!')
+  console.log('hello!'.replace("/n"))
 }
 
 
