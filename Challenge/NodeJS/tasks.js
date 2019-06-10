@@ -41,7 +41,11 @@ function onDataReceived(text) {
     help();
   }
 
-  else if (text === 'quit' || text === 'exit'){
+  else if (text === 'quit\n'){
+    quit();
+  }
+
+  else if (text === 'exit\n'){
     quit();
   }
 
@@ -74,7 +78,7 @@ function onDataReceived(text) {
  * @param  {string} c the text received
  * @returns {void}
  */
-function unknownCommand(c){
+function unknownCommand(c){c.replace("\n").trim(" ")
   console.log('unknown command: "'+c.trim()+'"')
 }
 
@@ -106,7 +110,7 @@ function quit(){
  * @returns {void}
  */
 function help(){
-  console.log('unknownCommand\n' + 'hello\n' + 'quit\n');
+  console.log('unknownCommand\n' + 'hello\n' + 'quit\n' + 'add\n' + 'list\n' + 'remove\n');
 }
 
 /** 
