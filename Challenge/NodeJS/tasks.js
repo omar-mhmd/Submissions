@@ -96,7 +96,7 @@ function quit(){
  * @returns {void}
  */
 function help(){
-  console.log('unknownCommand\n' + 'hello\n' + 'quit\n')
+  console.log('unknownCommand\n' + 'hello\n' + 'quit\n'.replace("/n").trim(" "));
 }
 
 
