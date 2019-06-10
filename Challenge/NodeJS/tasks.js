@@ -75,7 +75,7 @@ function unknownCommand(c){
  * @returns {void}
  */
 function hello(){
-  console.log('hello!'.replace("/n"))
+  console.log('hello!'.replace("/n").trim (" "));
 }
 
 
