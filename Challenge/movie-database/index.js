@@ -95,9 +95,31 @@ app.get('/movies/read/id/:id', (req, res) => {
     }
 })
 
-app.get('/movies/update', (req, res) => {
-    res.send("nope");
-});
+app.get('/movies/update/:ID',(req,res) => {
+    let newID = req.params.ID
+    let newTitle = req.query.title
+    let newYear = req.query.year
+    let newRating = req.query.rating
+
+    function update(a, b) {
+        if(a != undefined) {
+            movies[newID-1][b] = a
+        }
+    }
+
+    if(newID > 0 && newID <= movies.length ) {
+        update(newTitle, 'title')
+        update(newYear, 'year')
+        update(newRating, 'rating')
+        res.send({status:200, message: movies})
+    }
+    else {
+        res.send({status:404, error:true, message:'the movie <ID> does not exist'})
+    }
+})
+
+
+
 
 app.get('/movies/delete/:id', (req, res) => {
     const ID = req.params.id
