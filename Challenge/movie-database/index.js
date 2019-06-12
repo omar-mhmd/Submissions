@@ -33,10 +33,33 @@ const movies = [
     { title: 'Avatar', year: 2009, rating: 7.8 },
     { title: 'Brazil', year: 1985, rating: 8 },
     { title: 'الإرهاب والكباب‎', year: 1992, rating: 6.2 }
-]
+] 
 
-app.get('/movies/create' , (req, res) => {
-    res.send("okay");
+
+
+app.get('/movies/add' , (req, res) => {
+    var name = req.query.title
+    var date = req.query.year
+    var score = req.query.rating
+    movies.push({title:name,year:date,rating:score})
+
+    if(name=="" || date==""){
+        return(res.send({status:403, error:true, message:'you cannot create a movie without providing a title and a year'}))
+    }
+    else if(date.length !== 4){
+        return(res.send({status:403, error:true, message:'you cannot create a movie without providing a title and a year'}))
+    }
+    else if(isNaN(date)){
+        return(res.send({status:403, error:true, message:'you cannot create a movie without providing a title and a year'}))
+    }
+    else if(!score  ||score==''|| isNaN(score)){
+        movies.push({title:name,year:date,rating: 4})
+        res.send({status:200, data:movies});
+
+
+       
+    }
+    else{res.send({status:200, data:movies});}
 });
 
 app.get('/movies/read' , (req, res) => {
