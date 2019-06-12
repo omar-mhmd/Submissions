@@ -37,7 +37,7 @@ const movies = [
 
 
 
-app.get('/movies/add', (req, res) => {
+app.get('/movies/add', (req, res) => {  //Iwould have used app.post as a verb
     var name = req.query.title
     var date = req.query.year
     var score = req.query.rating
@@ -60,7 +60,7 @@ app.get('/movies/add', (req, res) => {
     else { res.send({ status: 200, data: movies }); }
 });
 
-app.get('/movies/read', (req, res) => {
+app.get('/movies/read', (req, res) => {  
     res.send({ status: 200, data: movies });
 });
 
@@ -95,7 +95,7 @@ app.get('/movies/read/id/:id', (req, res) => {
     }
 })
 
-app.get('/movies/update/:ID',(req,res) => {
+app.get('/movies/update/:ID',(req,res) => {  //I would have used app.put as a verb
     let newID = req.params.ID
     let newTitle = req.query.title
     let newYear = req.query.year
@@ -121,7 +121,7 @@ app.get('/movies/update/:ID',(req,res) => {
 
 
 
-app.get('/movies/delete/:id', (req, res) => {
+app.get('/movies/delete/:id', (req, res) => {    //I would have used app.delete as a verb
     const ID = req.params.id
     for (i = 0; i <= movies.length; i++) {
         if (i == ID) {
