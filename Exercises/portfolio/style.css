@@ -200,3 +200,9 @@ body{
     left: 290px;
     padding:20px;
   }
+
+  .form{
+    position: relative;
+    top:-190px;
+    right:-480px;
+  }
