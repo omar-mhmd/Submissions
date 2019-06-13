@@ -1,5 +1,31 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
+const url = process.env.MONGOLAB_URI;
+mongoose.Promise = global.Promise;
+
+mongoose.connect("mongodb+srv://omar-mhmd:marmar123@cluster0-e70xn.mongodb.net/test?retryWrites=true&w=majority", {
+useMongoClient:true
+}
+);
+
+MONGOLAB_URI="mongodb+srv://omar-mhmd:marmar123@cluster0-e70xn.mongodb.net/test?retryWrites=true&w=majority"
+
+heroku:
+MONGOLAB_URI="mongodb+srv://omar-mhmd:marmar123@cluster0-e70xn.mongodb.net/test?retryWrites=true&w=majority"
+
+const moviesSchema = new mongoose.Schema({
+    title: String,
+    year: Number,
+    rating: Number
+    });
+
+    const movies1 = mongoose.model('movies', moviesSchema);
 
 app.get('/', (req, res) => {
     res.send('Ok');
@@ -37,11 +63,14 @@ const movies = [
 
 
 
-app.get('/movies/add', (req, res) => {  //Iwould have used app.post as a verb
+app.post('/movies/add', (req, res) => {  // I would have used app.post as a verb
+
+    const myData =  new movies(req.body);
+    myData.save()
     var name = req.query.title
     var date = req.query.year
     var score = req.query.rating
-    movies.push({ title: name, year: date, rating: score })
+    // movies.push({ title: name, year: date, rating: score })
 
     if (name == "" || date == "") {
         return (res.send({ status: 403, error: true, message: 'you cannot create a movie without providing a title and a year' }))
@@ -91,11 +120,11 @@ app.get('/movies/read/id/:id', (req, res) => {
         res.send({ status: 200, data: movies[ID - 1] })
     }
     else {
-        res.send({ status: 404, error: true, message: 'the movie ' + ID + ' does not exist' })
+        res.send({ status: 404, error: true, message: 'update/2?title=fhfthe movie ' + ID + ' does not exist' })
     }
 })
 
-app.get('/movies/update/:ID',(req,res) => {  //I would have used app.put as a verb
+app.put('/movies/update/:ID',(req,res) => {  //I would have used app.put as a verb
     let newID = req.params.ID
     let newTitle = req.query.title
     let newYear = req.query.year
@@ -121,7 +150,7 @@ app.get('/movies/update/:ID',(req,res) => {  //I would have used app.put as a ve
 
 
 
-app.get('/movies/delete/:id', (req, res) => {    //I would have used app.delete as a verb
+app.delete('/movies/delete/:id', (req, res) => {    //I would have used app.delete as a verb
     const ID = req.params.id
     for (i = 0; i <= movies.length; i++) {
         if (i == ID) {
