@@ -206,3 +206,13 @@ body{
     top:-190px;
     right:-480px;
   }
+  
+  .work-text{
+       text-align: center;
+    font-family: "Ardella"; font-size:22px; color:white;
+    width:550px;
+    position: relative;
+    bottom: 250px;
+    left: 420px;
+    padding:30px;
+  }
