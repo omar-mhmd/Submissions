@@ -206,6 +206,7 @@ body{
     top:-190px;
     right:-480px;
   }
+<<<<<<< HEAD
   
   .work-text{
        text-align: center;
@@ -216,3 +217,9 @@ body{
     left: 420px;
     padding:30px;
   }
+=======
+
+label{
+ color: white;
+}
+>>>>>>> 27e14e259d965bdb5f8744df71b7d570b32ab79d
